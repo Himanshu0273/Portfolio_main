@@ -37,7 +37,7 @@
             <a href="https://linktr.ee/himanshu273" target="_blank"><i class='bx bxs-tree'></i></a>
         </div>
         <div class="home-img">
-            <img src="images/photo_Baid.jpg" alt="" width = "50" height="400">
+            <img src="images/photo_Baid.jpg" alt="" width = "380" height="500">
         </div>
         <div class="home-text">
             <span>Hello, I'm</span>
@@ -57,7 +57,7 @@
         <!-- About Content -->
         <div class="about-container">
             <div class="about-img">
-                <img src="images/Baid_2.jpeg" alt="">
+                <img src="images/Baid_2.jpeg" alt="" height="500" width="200">
             </div>
             <div class="about-text">
                 <p>I am a punctual and dedicated team player who consistently strives for excellence in my work.I take pride in my punctuality, which ensures that I consistently meet deadlines and contribute effectively to my team. My dedication to my work goes beyond just completing tasks; I am committed to delivering high-quality results and continuously improving my skills to benefit both my team and the organization as a whole.</p>
@@ -195,14 +195,16 @@
                     <img src="images/CareerWise1.jpg" alt="" width="200" height="500">
                 </a>
             </div>
-            
+            <!--DocScore-->
             <div class="portfolio-img">
-                <img src="images/Hidden Facts.png" alt="" width="200" height="500">
+                <img src="images/Docscore1.png" alt="" width="200" height="500">
             </div>
             
+            <!--Drone App-->
             <div class="portfolio-img">
-                <a href="https://drive.google.com/file/d/1-PHCa8PPRRGJ9kPtoGAV9w7teCPH_1M7/view?usp=share_link/" target="_blank"  width="150" height="570">
-                <img src="images/1.png" alt=""></a>
+                <img src="images/Drone1.png" alt="" width="200" height="500">
+                <!-- <a href="https://drive.google.com/file/d/1-PHCa8PPRRGJ9kPtoGAV9w7teCPH_1M7/view?usp=share_link/" target="_blank"  width="150" height="570">
+                <img src="images/1.png" alt=""></a> -->
             </div>
             
         </div>
@@ -210,18 +212,32 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <div class="heading">
-            <h2>Contact</h2>
-            <span>Connect With Us</span>
+            <h2>Contact Me</h2>
+            <span>Connect With Me</span>
         </div>
         <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Your Name">
-                <input type="email" name="" id="" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
-                <input type="button" value="Send" class="contact-button">
-            </form>
+
+            <form name="contact" method="POST" data-netlify="true" action="https://hook.us1.make.com/f55u27geiavdxh03q0m1q6n5cdlgmy9j">
+                <!-- Add the hidden form-name field here -->
+                <input type="hidden" name="form-name" value="contact" />
+              
+                <!-- Other form fields here -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send" class="contact-button">
+                <!-- <button type="button" id="custom-button">Submit</button> -->
+              </form>
+
+            
         </div>
     </section>
+    
     <!-- Footer -->
     <div class="footer">
         <h2>Contact Me</h2>
@@ -240,6 +256,7 @@
  
  
     <!-- Link To JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
